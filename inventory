@@ -9,6 +9,8 @@
 # hybrid.example  node_type=hybrid
 # hybrid2.example <- this will default to hybrid
 [automationcontroller]
+aap2.tgh.lab
+aap3.tgh.lab
 
 [automationcontroller:vars]
 peers=execution_nodes
@@ -26,10 +28,13 @@ peers=execution_nodes
 [execution_nodes]
 
 [automationhub]
+aap4.tgh.lab
+aap5.tgh.lab
 
 [automationedacontroller]
 
 [database]
+aap1.tgh.lab
 
 # Single Sign-On
 # If sso_redirect_host is set, that will be used for application to connect to
@@ -39,14 +44,14 @@ peers=execution_nodes
 [sso]
 
 [all:vars]
-admin_password=''
+admin_password='admin'
 
-pg_host=''
+pg_host='aap1.tgh.lab'
 pg_port=5432
 
 pg_database='awx'
 pg_username='awx'
-pg_password=''
+pg_password='Postgres'
 pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
 
 # Managed Postgres Options
@@ -73,8 +78,8 @@ pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
 #   installer is used.
 
 registry_url='registry.redhat.io'
-registry_username=''
-registry_password=''
+registry_username='7424076|devansiblemandiri'
+registry_password='eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiIwZGFkZDk5ZWZjNTc0MTI0YmI4MDI5NWRhMDA0MGFmOSJ9.UF4WwOqmVwEMwmrj-XSYLIgSMqmW8JV4f9dC5Q6Wr4g0WbwXsGtSOs6yz4zv6zHa1BFRXqlpVSs-7pnlYAcHqne7i9uqb3WGMph7Kcmr4ABG_bLbuVPfgw7Pa8uSXI5Lfq5Ucadf84URXTCuiVagbOhjgNQl5-rvjTpTmjwcMuoyK70cAhNaQeYV6h_aBlOPlr9wqA7fkf-c03JOua1p0g1hkooHZHPAeElGke4rmD_xCdpoTZ8hIFEUiPyT7VacSVAa56uFNIsnfJ44TS0TdIQvQaNwTsoqRtbBHpzZGqJMm736vzMCdlRth2_2lcC1v00ALjDBhZMn8MXtghO0GIrtVpsDTj-JZxG_W5ktxuc_mzlIxRO23le0GQh7yRAkS74nrrTFGBJPrMXlwyD011bsIPVeKC7SBq0mhJfUMGhYOei0nsJ683eM92BQ2k7PNIv-VqZnkjjszQi7UGVIJhYYmBWWs43uiqyeipoN7fczzkqwaGKfo1_ZhjizQQ1Ng8_CkQIVbpIM8f9KL8AtxpDG6lUVnhnahRkQEZ4tQz50IoxdsfuembyLfybjj3IWNeJrq_WpTBBWEAYJ1oWeTkKtsUT-3BNM_Ugrff1Hc6tiD_aUjERAzNom2khmuniK8Eclg6Sub1YTCt0yeU2amPJ9icutl8TRmJ2jEhWzg0g'
 # ee_from_hub_only =
 
 # If you wish to add Ansible Engine 2.9 execution environment, set the following variable to true.
@@ -89,14 +94,14 @@ receptor_listener_port=27199
 # Automation Hub Configuration
 #
 
-automationhub_admin_password=''
+automationhub_admin_password='admin'
 
-automationhub_pg_host=''
+automationhub_pg_host='aap1.tgh.lab'
 automationhub_pg_port=5432
 
 automationhub_pg_database='automationhub'
 automationhub_pg_username='automationhub'
-automationhub_pg_password=''
+automationhub_pg_password='Postgres'
 automationhub_pg_sslmode='prefer'
 
 # Set to True to overwrite existing admin password.
