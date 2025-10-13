@@ -52,3 +52,8 @@ sudo systemctl start nfs-server rpcbind
     sudo firewall-cmd --permanent --add-service=rpc-bind
     sudo firewall-cmd --reload
     ```
+
+
+
+
+./setup.sh -e 'backup_dest=/ansible/mybackup' -e 'use_archive_compression=true' 'use_db_compression=true' @credentials.yml -b
