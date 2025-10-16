@@ -14,6 +14,8 @@ aap9.tgh.lab  AAP-192.168.222.19  eda2
 AAP-192.168.222.12 - (09/10/2025 - 14:39:39)    fresh install
 AAP-192.168.222.12 - (09/10/2025 - 17:51:04)    ready to setup 
 AAP-192.168.222.15 - (10/10/2025 - 15:37:16)    finish install
+AAP-192.168.222.15 - (13/10/2025 - 00:56:48)    ready to upgrade
+AAP-192.168.222.19 - (13/10/2025 - 00:56:48)    fresh to ready to install
 
 rubah minimum ram dari hyperv menjadi 4096
 AAP-192.168.222.19 - (13/10/2025 - 00:56:48)    ready to upgrade
